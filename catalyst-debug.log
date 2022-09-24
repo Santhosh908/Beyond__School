@@ -1,0 +1,1120 @@
+[debug] [2022-09-11T12:59:19.994Z] : 
+[debug] [2022-09-11T12:59:19.995Z] : ----------------------------------------------------------------------
+[debug] [2022-09-11T12:59:19.995Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-11T12:59:19.996Z] : CLI Version:  1.13.3
+[debug] [2022-09-11T12:59:19.996Z] : Platform:     win32
+[debug] [2022-09-11T12:59:19.996Z] : Node Version: v16.15.1
+[debug] [2022-09-11T12:59:20.001Z] : Time:         Sun Sep 11 2022 18:29:19 GMT+0530 (India Standard Time)
+[debug] [2022-09-11T12:59:20.001Z] : ----------------------------------------------------------------------
+[debug] [2022-09-11T12:59:20.001Z] : 
+[debug] [2022-09-11T12:59:21.423Z] : > authorizing via signed-in user option
+[debug] [2022-09-11T12:59:21.423Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-11T12:59:21.436Z] : > refreshing access token <
+[debug] [2022-09-11T12:59:21.438Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-11T12:59:21.828Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 12:59:24 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=3bcf233c3836eb7934b6f3edc257f951; Path=/","iamcsr=64554f1c-2f18-4847-81c0-8292a011c25e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=64554f1c-2f18-4847-81c0-8292a011c25e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T12:59:21.837Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-11T12:59:22.163Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 12:59:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=d1d273db-3e6d-4f3a-9e44-83353ab86087;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d1d273db-3e6d-4f3a-9e44-83353ab86087;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T12:59:22.165Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-11T12:59:22.413Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 12:59:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=f85e9916-b869-493b-b677-3450b2dac140;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f85e9916-b869-493b-b677-3450b2dac140;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T12:59:22.709Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-11T12:59:23.460Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 12:59:26 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=af1d4706-1ed5-4ee8-b62c-3c82f9e1f316;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=af1d4706-1ed5-4ee8-b62c-3c82f9e1f316;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T12:59:23.463Z] : unknown eol undefined hence skipping check
+[info] [2022-09-11T12:59:23.518Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-11T12:59:23.519Z] : 
+[info] [2022-09-11T12:59:23.520Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[debug] [2022-09-11T13:01:26.145Z] : 
+[debug] [2022-09-11T13:01:26.146Z] : ----------------------------------------------------------------------
+[debug] [2022-09-11T13:01:26.146Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-11T13:01:26.147Z] : CLI Version:  1.13.3
+[debug] [2022-09-11T13:01:26.147Z] : Platform:     win32
+[debug] [2022-09-11T13:01:26.147Z] : Node Version: v16.15.1
+[debug] [2022-09-11T13:01:26.148Z] : Time:         Sun Sep 11 2022 18:31:26 GMT+0530 (India Standard Time)
+[debug] [2022-09-11T13:01:26.149Z] : ----------------------------------------------------------------------
+[debug] [2022-09-11T13:01:26.149Z] : 
+[debug] [2022-09-11T13:01:26.891Z] : > authorizing via signed-in user option
+[debug] [2022-09-11T13:01:26.892Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-11T13:01:26.903Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-11T13:01:27.208Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 13:01:30 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=8005097f-9421-4c31-bdb8-dc1bae21987b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8005097f-9421-4c31-bdb8-dc1bae21987b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T13:01:27.212Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-11T13:01:27.444Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 13:01:30 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=0aaf6c18-1a0e-4df5-9edc-919463cfeb0b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=0aaf6c18-1a0e-4df5-9edc-919463cfeb0b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T13:01:27.611Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-11T13:01:28.077Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 13:01:31 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=07fe4a63-ff97-479a-84dc-f5b3ce21a2c5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=07fe4a63-ff97-479a-84dc-f5b3ce21a2c5;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T13:01:28.080Z] : unknown eol undefined hence skipping check
+[info] [2022-09-11T13:01:28.131Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-11T13:01:28.132Z] : 
+[info] [2022-09-11T13:01:28.133Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[debug] [2022-09-11T14:20:35.888Z] : 
+[debug] [2022-09-11T14:20:35.890Z] : ----------------------------------------------------------------------
+[debug] [2022-09-11T14:20:35.890Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-11T14:20:35.891Z] : CLI Version:  1.13.3
+[debug] [2022-09-11T14:20:35.892Z] : Platform:     win32
+[debug] [2022-09-11T14:20:35.892Z] : Node Version: v16.15.1
+[debug] [2022-09-11T14:20:35.898Z] : Time:         Sun Sep 11 2022 19:50:35 GMT+0530 (India Standard Time)
+[debug] [2022-09-11T14:20:35.899Z] : ----------------------------------------------------------------------
+[debug] [2022-09-11T14:20:35.899Z] : 
+[debug] [2022-09-11T14:20:37.419Z] : > authorizing via signed-in user option
+[debug] [2022-09-11T14:20:37.420Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-11T14:20:37.436Z] : > refreshing access token <
+[debug] [2022-09-11T14:20:37.439Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-11T14:20:37.988Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 14:20:40 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=94da0c17b67b4320ada519c299270f95; Path=/","iamcsr=ec1c94ae-f76b-4cad-984b-c499c1d07a4a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ec1c94ae-f76b-4cad-984b-c499c1d07a4a;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T14:20:38.002Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-11T14:20:38.465Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 14:20:41 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=fdab8438-3ad4-4a42-8096-7e3bf819090e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fdab8438-3ad4-4a42-8096-7e3bf819090e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T14:20:38.468Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-11T14:20:38.725Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 14:20:41 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=dc8bd07c-7f88-4e63-8820-ad4a8cbeaa64;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=dc8bd07c-7f88-4e63-8820-ad4a8cbeaa64;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T14:20:39.111Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-11T14:20:39.956Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 14:20:42 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=01c7dbbd-da03-4c09-913c-12cc8de3becb;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=01c7dbbd-da03-4c09-913c-12cc8de3becb;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T14:20:39.961Z] : unknown eol undefined hence skipping check
+[info] [2022-09-11T14:20:40.092Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-11T14:20:40.093Z] : 
+[info] [2022-09-11T14:20:40.095Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[debug] [2022-09-11T14:27:36.573Z] : 
+[debug] [2022-09-11T14:27:36.576Z] : ----------------------------------------------------------------------
+[debug] [2022-09-11T14:27:36.577Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-11T14:27:36.577Z] : CLI Version:  1.13.3
+[debug] [2022-09-11T14:27:36.578Z] : Platform:     win32
+[debug] [2022-09-11T14:27:36.578Z] : Node Version: v16.15.1
+[debug] [2022-09-11T14:27:36.580Z] : Time:         Sun Sep 11 2022 19:57:36 GMT+0530 (India Standard Time)
+[debug] [2022-09-11T14:27:36.580Z] : ----------------------------------------------------------------------
+[debug] [2022-09-11T14:27:36.581Z] : 
+[debug] [2022-09-11T14:27:37.555Z] : > authorizing via signed-in user option
+[debug] [2022-09-11T14:27:37.556Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-11T14:27:37.573Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-11T14:27:38.095Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 14:27:40 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=82142466-2324-4a93-86cd-c8e740464dfa;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=82142466-2324-4a93-86cd-c8e740464dfa;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T14:27:38.101Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-11T14:27:38.318Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 14:27:41 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=b816a84d-a52f-4d45-94ab-8c1939114d8c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b816a84d-a52f-4d45-94ab-8c1939114d8c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T14:27:38.561Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-11T14:27:39.117Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 14:27:41 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=7a7c8040-dffd-455a-980b-2d8f41d27cb4;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=7a7c8040-dffd-455a-980b-2d8f41d27cb4;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T14:27:39.120Z] : unknown eol undefined hence skipping check
+[info] [2022-09-11T14:27:39.194Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-11T14:27:39.194Z] : 
+[info] [2022-09-11T14:27:39.198Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[debug] [2022-09-11T14:35:06.042Z] : 
+[debug] [2022-09-11T14:35:06.047Z] : ----------------------------------------------------------------------
+[debug] [2022-09-11T14:35:06.048Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-11T14:35:06.048Z] : CLI Version:  1.13.3
+[debug] [2022-09-11T14:35:06.049Z] : Platform:     win32
+[debug] [2022-09-11T14:35:06.050Z] : Node Version: v16.15.1
+[debug] [2022-09-11T14:35:06.052Z] : Time:         Sun Sep 11 2022 20:05:06 GMT+0530 (India Standard Time)
+[debug] [2022-09-11T14:35:06.052Z] : ----------------------------------------------------------------------
+[debug] [2022-09-11T14:35:06.052Z] : 
+[debug] [2022-09-11T14:35:07.349Z] : > authorizing via signed-in user option
+[debug] [2022-09-11T14:35:07.350Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-11T14:35:07.367Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-11T14:35:07.788Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 14:35:10 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=c51a77e8-e5d7-4be8-a85d-62c574274d91;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c51a77e8-e5d7-4be8-a85d-62c574274d91;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T14:35:07.792Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-11T14:35:08.009Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 14:35:10 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=5ec3c04a-98ab-488a-ab36-41373b45aa41;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5ec3c04a-98ab-488a-ab36-41373b45aa41;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T14:35:08.262Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-11T14:35:08.876Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 14:35:11 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=e057a473-2ee9-4f79-887e-af603a8cfa03;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e057a473-2ee9-4f79-887e-af603a8cfa03;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-11T14:35:08.881Z] : unknown eol undefined hence skipping check
+[info] [2022-09-11T14:35:08.961Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-11T14:35:08.962Z] : 
+[info] [2022-09-11T14:35:08.965Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2022-09-11T14:35:11.548Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2022-09-11T14:35:28.467Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   2.33 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 321.92 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 220.50 kB | 
+[Angular-plugin]: main.js               | main          |  52.59 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  48.11 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   2.96 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-11T14:35:28.352Z - Hash: 6713897231b172fe - Time: 14562ms
+[info] [2022-09-11T14:35:28.469Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on localhost:3030, open your browser on http://localhost:3030/app **
+[Angular-plugin]: 
+[info] [2022-09-11T14:35:28.471Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2022-09-11T14:35:28.488Z] : [Angular-plugin]: Please visit this url to access beyondschool: http://localhost:3000/app/
+[info] [2022-09-11T14:35:47.427Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: vendor.js, vendor.6713897231b172fe.hot-update.js   | vendor  |  2.36 MB | 
+[Angular-plugin]: runtime.js, runtime.6713897231b172fe.hot-update.js | runtime | 48.45 kB | 
+[Angular-plugin]: main.js, main.6713897231b172fe.hot-update.js       | main    |  8.75 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 2 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-11T14:35:47.356Z - Hash: 0842775d44c66403 - Time: 1025ms
+[info] [2022-09-11T14:35:47.432Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/app.component.html:267:40 - error NG5002: Invalid ICU message. Missing '}'.[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]: 267   @media screen and (max-width: 767px) {[Angular-plugin]: 
+[Angular-plugin]:                                            ~[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]:   src/app/app.component.ts:5:16[Angular-plugin]: 
+[Angular-plugin]:     5   templateUrl: './app.component.html',[Angular-plugin]: 
+[Angular-plugin]:                      ~~~~~~~~~~~~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]:     Error occurs in the template of component AppComponent.[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/app.component.html:493:1 - error NG5002: Unexpected character "EOF" (Do you have an unescaped "{" in your template? Use "{{ '{' }}") to escape it.)[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]: 493 [Angular-plugin]: 
+[Angular-plugin]:     [Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]:   src/app/app.component.ts:5:16[Angular-plugin]: 
+[Angular-plugin]:     5   templateUrl: './app.component.html',[Angular-plugin]: 
+[Angular-plugin]:                      ~~~~~~~~~~~~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]:     Error occurs in the template of component AppComponent.[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2022-09-11T14:35:47.434Z] : [Angular-plugin]: 
+[Angular-plugin]: × Failed to compile.
+[info] [2022-09-11T14:35:53.273Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: runtime.js, runtime.6713897231b172fe.hot-update.js | runtime | 48.45 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 4 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-11T14:35:53.264Z - Hash: e04862920ebc5629 - Time: 295ms
+[info] [2022-09-11T14:35:53.277Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/app.component.html:177:40 - error NG5002: Invalid ICU message. Missing '}'.[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]: 177   @media screen and (max-width: 767px) {[Angular-plugin]: 
+[Angular-plugin]:                                            ~[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]:   src/app/app.component.ts:5:16[Angular-plugin]: 
+[Angular-plugin]:     5   templateUrl: './app.component.html',[Angular-plugin]: 
+[Angular-plugin]:                      ~~~~~~~~~~~~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]:     Error occurs in the template of component AppComponent.[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/app.component.html:403:1 - error NG5002: Unexpected character "EOF" (Do you have an unescaped "{" in your template? Use "{{ '{' }}") to escape it.)[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]: 403 [Angular-plugin]: 
+[Angular-plugin]:     [Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]:   src/app/app.component.ts:5:16[Angular-plugin]: 
+[Angular-plugin]:     5   templateUrl: './app.component.html',[Angular-plugin]: 
+[Angular-plugin]:                      ~~~~~~~~~~~~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]:     Error occurs in the template of component AppComponent.[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2022-09-11T14:35:53.279Z] : [Angular-plugin]: 
+[Angular-plugin]: × Failed to compile.
+[info] [2022-09-11T14:36:03.286Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: runtime.js, runtime.6713897231b172fe.hot-update.js | runtime | 48.45 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 4 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-11T14:36:03.231Z - Hash: 837571cb17f00fa1 - Time: 326ms
+[info] [2022-09-11T14:36:03.290Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/app.component.html:106:1 - error NG5002: Unexpected closing tag "div". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]: 106 </div>[Angular-plugin]: 
+[Angular-plugin]:     ~~~~~~[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]:   src/app/app.component.ts:5:16[Angular-plugin]: 
+[Angular-plugin]:     5   templateUrl: './app.component.html',[Angular-plugin]: 
+[Angular-plugin]:                      ~~~~~~~~~~~~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]:     Error occurs in the template of component AppComponent.[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2022-09-11T14:36:03.292Z] : [Angular-plugin]: 
+[Angular-plugin]: × Failed to compile.
+[info] [2022-09-11T14:36:10.627Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: vendor.js                                          | vendor  |  2.33 MB | 
+[Angular-plugin]: runtime.js, runtime.6713897231b172fe.hot-update.js | runtime | 48.45 kB | 
+[Angular-plugin]: main.js, main.6713897231b172fe.hot-update.js       | main    |  9.53 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 2 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-11T14:36:10.603Z - Hash: 639f579f092102c9 - Time: 1173ms
+[info] [2022-09-11T14:36:10.629Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2022-09-11T14:36:11.588Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: runtime.js, runtime.639f579f092102c9.hot-update.js | runtime | 48.45 kB | 
+[Angular-plugin]: main.js, main.639f579f092102c9.hot-update.js       | main    |  9.53 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-11T14:36:11.560Z - Hash: 7b86f8f33a0bea6f - Time: 303ms
+[info] [2022-09-11T14:36:11.592Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2022-09-11T14:36:47.314Z] : Shutting down server
+[debug] [2022-09-11T14:36:47.886Z] : proxy closed
+[info] [2022-09-11T14:36:47.889Z] : 
+[info] [2022-09-11T14:36:47.890Z] : ✔ Shutdown complete
+[debug] [2022-09-11T14:36:47.891Z] : NO ERRORS REGISTERED
+[debug] [2022-09-11T14:36:47.892Z] : EXEC ENDED with event: serve, message: success
+[debug] [2022-09-11T14:36:47.892Z] : TOTAL DURATION OF COMMAND EXEC : 100579
+[debug] [2022-09-11T14:36:47.915Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-11T14:36:49.275Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 11 Sep 2022 14:36:52 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=c497bea1-c69a-47ef-bcc5-d517dadf2033;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c497bea1-c69a-47ef-bcc5-d517dadf2033;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-13T13:19:50.174Z] : 
+[debug] [2022-09-13T13:19:50.175Z] : ----------------------------------------------------------------------
+[debug] [2022-09-13T13:19:50.176Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-13T13:19:50.176Z] : CLI Version:  1.13.3
+[debug] [2022-09-13T13:19:50.176Z] : Platform:     win32
+[debug] [2022-09-13T13:19:50.177Z] : Node Version: v16.15.1
+[debug] [2022-09-13T13:19:50.183Z] : Time:         Tue Sep 13 2022 18:49:50 GMT+0530 (India Standard Time)
+[debug] [2022-09-13T13:19:50.183Z] : ----------------------------------------------------------------------
+[debug] [2022-09-13T13:19:50.183Z] : 
+[debug] [2022-09-13T13:19:51.658Z] : > authorizing via signed-in user option
+[debug] [2022-09-13T13:19:51.658Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-13T13:19:51.674Z] : > refreshing access token <
+[debug] [2022-09-13T13:19:51.676Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-13T13:19:52.014Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 13 Sep 2022 13:19:53 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=94da0c17b67b4320ada519c299270f95; Path=/","iamcsr=ac5ae55b-8116-42c3-b7ac-343482137ce0;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ac5ae55b-8116-42c3-b7ac-343482137ce0;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-13T13:19:52.024Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-13T13:19:52.398Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 13 Sep 2022 13:19:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=1bf99bcf-4400-4dbf-94aa-6d4b43d2547a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1bf99bcf-4400-4dbf-94aa-6d4b43d2547a;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-13T13:19:52.400Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-13T13:19:52.667Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 13 Sep 2022 13:19:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=55bc57e4-5096-4f74-9628-eba98c18ca8e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=55bc57e4-5096-4f74-9628-eba98c18ca8e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-13T13:19:52.989Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-13T13:19:53.710Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 13 Sep 2022 13:19:55 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=5d66929b-b09b-4eae-a213-d6a79ce4fba9;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5d66929b-b09b-4eae-a213-d6a79ce4fba9;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-13T13:19:53.712Z] : unknown eol undefined hence skipping check
+[info] [2022-09-13T13:19:53.784Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-13T13:19:53.784Z] : 
+[info] [2022-09-13T13:19:53.785Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2022-09-13T13:19:56.931Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2022-09-13T13:20:02.989Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   2.33 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 321.92 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 220.50 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  48.11 kB | 
+[Angular-plugin]: main.js               | main          |   8.00 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   2.92 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-13T13:20:02.889Z - Hash: 0bb718b2b420277a - Time: 3557ms
+[info] [2022-09-13T13:20:02.991Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on localhost:3030, open your browser on http://localhost:3030/app **
+[Angular-plugin]: 
+[info] [2022-09-13T13:20:02.993Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2022-09-13T13:20:03.005Z] : [Angular-plugin]: Please visit this url to access beyondschool: http://localhost:3000/app/
+[info] [2022-09-13T13:21:12.102Z] : Shutting down server
+[debug] [2022-09-13T13:21:12.105Z] : proxy closed
+[info] [2022-09-13T13:21:12.107Z] : 
+[info] [2022-09-13T13:21:12.108Z] : ✔ Shutdown complete
+[debug] [2022-09-13T13:21:12.109Z] : NO ERRORS REGISTERED
+[debug] [2022-09-13T13:21:12.109Z] : EXEC ENDED with event: serve, message: success
+[debug] [2022-09-13T13:21:12.109Z] : TOTAL DURATION OF COMMAND EXEC : 80475
+[debug] [2022-09-13T13:21:12.122Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-13T13:21:13.729Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 13 Sep 2022 13:21:15 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=2150a5ef-3f57-4f64-a778-e577dbd18e0e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=2150a5ef-3f57-4f64-a778-e577dbd18e0e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-13T15:56:29.089Z] : 
+[debug] [2022-09-13T15:56:29.091Z] : ----------------------------------------------------------------------
+[debug] [2022-09-13T15:56:29.092Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-13T15:56:29.092Z] : CLI Version:  1.13.3
+[debug] [2022-09-13T15:56:29.092Z] : Platform:     win32
+[debug] [2022-09-13T15:56:29.093Z] : Node Version: v16.15.1
+[debug] [2022-09-13T15:56:29.095Z] : Time:         Tue Sep 13 2022 21:26:29 GMT+0530 (India Standard Time)
+[debug] [2022-09-13T15:56:29.096Z] : ----------------------------------------------------------------------
+[debug] [2022-09-13T15:56:29.096Z] : 
+[debug] [2022-09-13T15:56:30.478Z] : > authorizing via signed-in user option
+[debug] [2022-09-13T15:56:30.479Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-13T15:56:30.497Z] : > refreshing access token <
+[debug] [2022-09-13T15:56:30.500Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-13T15:56:30.909Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 13 Sep 2022 15:56:32 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=4440853cd702ab2a51402c119608ee85; Path=/","iamcsr=84b8c887-23e1-4758-a910-6a062caf2a5f;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=84b8c887-23e1-4758-a910-6a062caf2a5f;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-13T15:56:30.928Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-13T15:56:31.355Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 13 Sep 2022 15:56:32 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=828a4acb-83a9-4107-a6fd-8f7a13ac8777;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=828a4acb-83a9-4107-a6fd-8f7a13ac8777;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-13T15:56:31.357Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-13T15:56:31.614Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 13 Sep 2022 15:56:32 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=b9a9a969-53a5-412a-86e8-b21d747736f6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b9a9a969-53a5-412a-86e8-b21d747736f6;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-13T15:56:31.903Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-13T15:56:32.886Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 13 Sep 2022 15:56:34 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=bde74396-a9c2-446e-bdcb-fb4a2a93d202;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=bde74396-a9c2-446e-bdcb-fb4a2a93d202;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-13T15:56:32.891Z] : unknown eol undefined hence skipping check
+[info] [2022-09-13T15:56:32.989Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-13T15:56:32.990Z] : 
+[info] [2022-09-13T15:56:32.993Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2022-09-13T15:56:36.740Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2022-09-13T15:56:43.321Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   2.33 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 321.92 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 220.50 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  48.11 kB | 
+[Angular-plugin]: main.js               | main          |   8.00 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   2.92 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-13T15:56:43.228Z - Hash: 0bb718b2b420277a - Time: 3752ms
+[info] [2022-09-13T15:56:43.323Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on localhost:3030, open your browser on http://localhost:3030/app **
+[Angular-plugin]: 
+[info] [2022-09-13T15:56:43.330Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2022-09-13T15:56:43.351Z] : [Angular-plugin]: Please visit this url to access beyondschool: http://localhost:3000/app/
+[info] [2022-09-13T15:57:15.561Z] : Shutting down server
+[debug] [2022-09-13T15:57:15.567Z] : proxy closed
+[info] [2022-09-13T15:57:15.569Z] : 
+[info] [2022-09-13T15:57:15.571Z] : ✔ Shutdown complete
+[debug] [2022-09-13T15:57:15.572Z] : NO ERRORS REGISTERED
+[debug] [2022-09-13T15:57:15.573Z] : EXEC ENDED with event: serve, message: success
+[debug] [2022-09-13T15:57:15.573Z] : TOTAL DURATION OF COMMAND EXEC : 45118
+[debug] [2022-09-13T15:57:15.599Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-13T15:57:17.340Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 13 Sep 2022 15:57:18 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=8458efb5-1b26-4d93-a255-dfb72d4fb52c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8458efb5-1b26-4d93-a255-dfb72d4fb52c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T04:27:24.608Z] : 
+[debug] [2022-09-24T04:27:24.611Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T04:27:24.613Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-24T04:27:24.613Z] : CLI Version:  1.13.3
+[debug] [2022-09-24T04:27:24.614Z] : Platform:     win32
+[debug] [2022-09-24T04:27:24.615Z] : Node Version: v16.15.1
+[debug] [2022-09-24T04:27:24.617Z] : Time:         Sat Sep 24 2022 09:57:24 GMT+0530 (India Standard Time)
+[debug] [2022-09-24T04:27:24.618Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T04:27:24.618Z] : 
+[debug] [2022-09-24T04:27:26.166Z] : > authorizing via signed-in user option
+[debug] [2022-09-24T04:27:26.167Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-24T04:27:26.188Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-24T04:27:26.365Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:27:26 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=c123c552-b5c5-423a-87c1-fd26b34afa16;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c123c552-b5c5-423a-87c1-fd26b34afa16;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T04:27:26.371Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-24T04:27:26.483Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:27:26 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=aa8fd463-bda9-4fe2-892e-7785d8801988;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=aa8fd463-bda9-4fe2-892e-7785d8801988;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T04:27:26.857Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-24T04:27:27.774Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:27:27 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=b745f676-8c28-4874-83fb-260f486d261d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b745f676-8c28-4874-83fb-260f486d261d;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T04:27:27.778Z] : unknown eol undefined hence skipping check
+[info] [2022-09-24T04:27:27.886Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-24T04:27:27.887Z] : 
+[info] [2022-09-24T04:27:27.891Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2022-09-24T04:27:33.953Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2022-09-24T04:27:48.115Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   2.46 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 321.92 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 220.50 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  48.11 kB | 
+[Angular-plugin]: main.js               | main          |   8.00 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   3.04 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-24T04:27:47.970Z - Hash: d115e702bfc89bb5 - Time: 10346ms
+[info] [2022-09-24T04:27:48.117Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on localhost:3030, open your browser on http://localhost:3030/app **
+[Angular-plugin]: 
+[info] [2022-09-24T04:27:48.119Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2022-09-24T04:27:48.132Z] : [Angular-plugin]: Please visit this url to access beyondschool: http://localhost:3000/app/
+[debug] [2022-09-24T04:27:56.607Z] : proxy closed
+[info] [2022-09-24T04:28:03.891Z] : Shutting down server
+[info] [2022-09-24T04:28:03.899Z] : 
+[info] [2022-09-24T04:28:03.901Z] : ✔ Shutdown complete
+[debug] [2022-09-24T04:28:03.902Z] : NO ERRORS REGISTERED
+[debug] [2022-09-24T04:28:03.904Z] : EXEC ENDED with event: serve, message: success
+[debug] [2022-09-24T04:28:03.904Z] : TOTAL DURATION OF COMMAND EXEC : 37762
+[debug] [2022-09-24T04:28:03.923Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-24T04:28:05.273Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:28:05 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=d4caad21-e317-4d46-80e7-0bd4ac056c87;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d4caad21-e317-4d46-80e7-0bd4ac056c87;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T04:28:12.297Z] : 
+[debug] [2022-09-24T04:28:12.302Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T04:28:12.302Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2022-09-24T04:28:12.303Z] : CLI Version:  1.13.3
+[debug] [2022-09-24T04:28:12.303Z] : Platform:     win32
+[debug] [2022-09-24T04:28:12.304Z] : Node Version: v16.15.1
+[debug] [2022-09-24T04:28:12.306Z] : Time:         Sat Sep 24 2022 09:58:12 GMT+0530 (India Standard Time)
+[debug] [2022-09-24T04:28:12.307Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T04:28:12.307Z] : 
+[debug] [2022-09-24T04:28:13.713Z] : > authorizing via signed-in user option
+[debug] [2022-09-24T04:28:13.714Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-24T04:28:13.734Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-24T04:28:13.886Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:28:13 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=74a788f2-33f7-412c-a1d6-21615b990183;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=74a788f2-33f7-412c-a1d6-21615b990183;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T04:28:13.894Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-24T04:28:14.005Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:28:13 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=a3729368-2c51-4c3b-b6e9-4d64d484174d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a3729368-2c51-4c3b-b6e9-4d64d484174d;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T04:28:14.030Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-24T04:28:14.152Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:28:14 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=69a3cb34-2ad4-407f-8bad-e522b8d59a4e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=69a3cb34-2ad4-407f-8bad-e522b8d59a4e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T04:28:14.158Z] : unknown eol undefined hence skipping check
+[debug] [2022-09-24T04:28:14.484Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/server/upsert 
+
+[debug] [2022-09-24T04:28:15.947Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:28:15 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=4ef59457-c536-4764-b2bc-e2235711373c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4ef59457-c536-4764-b2bc-e2235711373c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2022-09-24T04:28:16.517Z] : ℹ Plugin : "zcatalyst-cli-plugin-angular" is used for client deploy
+[info] [2022-09-24T04:28:16.518Z] : ℹ Building Application...
+[info] [2022-09-24T04:28:20.461Z] : [Angular-plugin]: Option "deployUrl" is deprecated: Use "baseHref" option, "APP_BASE_HREF" DI token or a combination of both instead. For more information, see https://angular.io/guide/deployment#the-deploy-url.
+[info] [2022-09-24T04:28:39.823Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files           | Names         |  Raw Size | Estimated Transfer Size
+[Angular-plugin]: main.0b5f624b61d921ae.js      | main          | 176.43 kB |                45.94 kB
+[Angular-plugin]: polyfills.f9b771efa7183cc7.js | polyfills     |  33.13 kB |                10.63 kB
+[Angular-plugin]: runtime.647b3e7b99d7182c.js   | runtime       |   1.05 kB |               598 bytes
+[Angular-plugin]: styles.ef46db3751d8e999.css   | styles        |   0 bytes |                       -
+[Angular-plugin]: 
+[Angular-plugin]:                               | Initial Total | 210.61 kB |                57.15 kB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-24T04:28:39.819Z - Hash: a15a5322bdb34aa9 - Time: 17498ms
+[debug] [2022-09-24T04:28:39.926Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/webapp 
+
+[debug] [2022-09-24T04:28:40.875Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:28:40 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=2c6afdcf-185c-4d95-b547-4d76574bd22e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=2c6afdcf-185c-4d95-b547-4d76574bd22e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2022-09-24T04:28:40.879Z] : 
+[info] [2022-09-24T04:28:40.880Z] : ℹ functions(beyondschool): URL => https://beyondschool-60016782335.development.catalystserverless.in/server/beyondschool/
+[info] [2022-09-24T04:28:40.881Z] : ✔ functions(beyondschool): deploy successful
+[info] [2022-09-24T04:28:40.882Z] : 
+[info] [2022-09-24T04:28:40.883Z] : ✔ client: deploy successful
+[info] [2022-09-24T04:28:40.884Z] : ℹ client: URL => https://beyondschool-60016782335.development.catalystserverless.in/app/index.html
+[info] [2022-09-24T04:28:40.884Z] : 
+[info] [2022-09-24T04:28:40.885Z] : ✔ Catalyst deploy complete!
+[debug] [2022-09-24T04:28:40.886Z] : NO ERRORS REGISTERED
+[debug] [2022-09-24T04:28:40.887Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2022-09-24T04:28:40.887Z] : TOTAL DURATION OF COMMAND EXEC : 27197
+[debug] [2022-09-24T04:28:40.936Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-24T04:28:42.149Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:28:42 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=d20b85eb-45a6-42ba-a76b-fec21dab4d99;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d20b85eb-45a6-42ba-a76b-fec21dab4d99;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T04:29:20.295Z] : 
+[debug] [2022-09-24T04:29:20.297Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T04:29:20.298Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2022-09-24T04:29:20.298Z] : CLI Version:  1.13.3
+[debug] [2022-09-24T04:29:20.299Z] : Platform:     win32
+[debug] [2022-09-24T04:29:20.300Z] : Node Version: v16.15.1
+[debug] [2022-09-24T04:29:20.302Z] : Time:         Sat Sep 24 2022 09:59:20 GMT+0530 (India Standard Time)
+[debug] [2022-09-24T04:29:20.302Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T04:29:20.302Z] : 
+[debug] [2022-09-24T04:29:21.733Z] : > authorizing via signed-in user option
+[debug] [2022-09-24T04:29:21.734Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-24T04:29:21.756Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-24T04:29:21.945Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:29:21 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=0ddae5f9-e700-426b-8bbb-39c5bb98a01e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=0ddae5f9-e700-426b-8bbb-39c5bb98a01e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T04:29:21.951Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-24T04:29:22.103Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:29:21 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=5efec71d-88ac-471c-8779-236a927718d5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5efec71d-88ac-471c-8779-236a927718d5;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T04:29:22.127Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-24T04:29:22.275Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:29:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=02d7925d-cb3a-4d8f-a67b-8e9185983986;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=02d7925d-cb3a-4d8f-a67b-8e9185983986;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T04:29:22.280Z] : unknown eol undefined hence skipping check
+[debug] [2022-09-24T04:29:22.575Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/server/upsert 
+
+[debug] [2022-09-24T04:29:22.983Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:29:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=6dda14b1-f7a6-486a-a250-784c6b8775bb;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6dda14b1-f7a6-486a-a250-784c6b8775bb;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2022-09-24T04:29:23.557Z] : ℹ Plugin : "zcatalyst-cli-plugin-angular" is used for client deploy
+[info] [2022-09-24T04:29:23.558Z] : ℹ Building Application...
+[info] [2022-09-24T04:29:27.267Z] : [Angular-plugin]: Option "deployUrl" is deprecated: Use "baseHref" option, "APP_BASE_HREF" DI token or a combination of both instead. For more information, see https://angular.io/guide/deployment#the-deploy-url.
+[info] [2022-09-24T04:29:33.319Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files           | Names         |  Raw Size | Estimated Transfer Size
+[Angular-plugin]: main.0b5f624b61d921ae.js      | main          | 176.43 kB |                45.94 kB
+[Angular-plugin]: polyfills.f9b771efa7183cc7.js | polyfills     |  33.13 kB |                10.63 kB
+[Angular-plugin]: runtime.647b3e7b99d7182c.js   | runtime       |   1.05 kB |               598 bytes
+[Angular-plugin]: styles.ef46db3751d8e999.css   | styles        |   0 bytes |                       -
+[Angular-plugin]: 
+[Angular-plugin]:                               | Initial Total | 210.61 kB |                57.15 kB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-24T04:29:33.311Z - Hash: a15a5322bdb34aa9 - Time: 4116ms
+[debug] [2022-09-24T04:29:33.436Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/webapp 
+
+[debug] [2022-09-24T04:29:33.822Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:29:33 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=b5380bc6-ce88-48a2-a949-687e38607861;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b5380bc6-ce88-48a2-a949-687e38607861;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2022-09-24T04:29:33.824Z] : 
+[info] [2022-09-24T04:29:33.825Z] : ℹ functions(beyondschool): URL => https://beyondschool-60016782335.development.catalystserverless.in/server/beyondschool/
+[info] [2022-09-24T04:29:33.826Z] : ✔ functions(beyondschool): deploy successful
+[info] [2022-09-24T04:29:33.827Z] : 
+[info] [2022-09-24T04:29:33.827Z] : ✔ client: deploy successful
+[info] [2022-09-24T04:29:33.828Z] : ℹ client: URL => https://beyondschool-60016782335.development.catalystserverless.in/app/index.html
+[info] [2022-09-24T04:29:33.829Z] : 
+[info] [2022-09-24T04:29:33.829Z] : ✔ Catalyst deploy complete!
+[debug] [2022-09-24T04:29:33.830Z] : NO ERRORS REGISTERED
+[debug] [2022-09-24T04:29:33.831Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2022-09-24T04:29:33.831Z] : TOTAL DURATION OF COMMAND EXEC : 12128
+[debug] [2022-09-24T04:29:33.844Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-24T04:29:35.054Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 04:29:34 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=1e1a517b-7dd5-4345-8baa-8f093000272c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1e1a517b-7dd5-4345-8baa-8f093000272c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T05:23:32.990Z] : 
+[debug] [2022-09-24T05:23:32.992Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T05:23:32.993Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-24T05:23:32.993Z] : CLI Version:  1.13.3
+[debug] [2022-09-24T05:23:32.994Z] : Platform:     win32
+[debug] [2022-09-24T05:23:32.994Z] : Node Version: v16.15.1
+[debug] [2022-09-24T05:23:33.003Z] : Time:         Sat Sep 24 2022 10:53:32 GMT+0530 (India Standard Time)
+[debug] [2022-09-24T05:23:33.004Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T05:23:33.004Z] : 
+[debug] [2022-09-24T05:23:35.027Z] : > authorizing via signed-in user option
+[debug] [2022-09-24T05:23:35.027Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-24T05:23:35.049Z] : > refreshing access token <
+[debug] [2022-09-24T05:23:35.051Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-24T05:23:35.639Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 05:23:35 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=4440853cd702ab2a51402c119608ee85; Path=/","iamcsr=4be4d05f-e4c1-4f8b-a794-6c380b813d45;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4be4d05f-e4c1-4f8b-a794-6c380b813d45;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T05:23:35.655Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-24T05:23:36.008Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 05:23:36 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=b2df6f9c-3528-4d44-a89b-7475d1b4a02d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b2df6f9c-3528-4d44-a89b-7475d1b4a02d;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T05:23:36.012Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-24T05:23:36.256Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 05:23:36 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=53495717-f60f-4322-8bf6-ae004bf1d078;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=53495717-f60f-4322-8bf6-ae004bf1d078;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T05:23:36.716Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-24T05:23:37.910Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 05:23:38 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=f2d9baec-f45e-4c54-a7be-b26652580675;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f2d9baec-f45e-4c54-a7be-b26652580675;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T05:23:37.914Z] : unknown eol undefined hence skipping check
+[info] [2022-09-24T05:23:38.016Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-24T05:23:38.018Z] : 
+[info] [2022-09-24T05:23:38.021Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2022-09-24T05:23:42.101Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2022-09-24T05:24:01.198Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   3.73 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 321.92 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 220.50 kB | 
+[Angular-plugin]: main.js               | main          |  64.16 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  48.11 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   4.37 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-24T05:24:01.007Z - Hash: 7ea2108a74879a89 - Time: 15827ms
+[info] [2022-09-24T05:24:01.200Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on localhost:3030, open your browser on http://localhost:3030/app **
+[Angular-plugin]: 
+[info] [2022-09-24T05:24:01.202Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2022-09-24T05:24:01.215Z] : [Angular-plugin]: Please visit this url to access beyondschool: http://localhost:3000/app/
+[debug] [2022-09-24T05:24:38.958Z] : proxy closed
+[debug] [2022-09-24T05:25:03.121Z] : proxy closed
+[debug] [2022-09-24T05:25:06.056Z] : proxy closed
+[debug] [2022-09-24T05:25:09.127Z] : proxy closed
+[debug] [2022-09-24T05:25:17.101Z] : proxy closed
+[info] [2022-09-24T05:25:21.718Z] : Shutting down server
+[debug] [2022-09-24T05:25:21.722Z] : proxy closed
+[info] [2022-09-24T05:25:21.723Z] : 
+[info] [2022-09-24T05:25:21.725Z] : ✔ Shutdown complete
+[debug] [2022-09-24T05:25:21.725Z] : NO ERRORS REGISTERED
+[debug] [2022-09-24T05:25:21.726Z] : EXEC ENDED with event: serve, message: success
+[debug] [2022-09-24T05:25:21.726Z] : TOTAL DURATION OF COMMAND EXEC : 106731
+[debug] [2022-09-24T05:25:21.749Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-24T05:25:22.992Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 05:25:23 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=80325ca3-f5a6-472c-bbeb-a8b38e8cfd40;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=80325ca3-f5a6-472c-bbeb-a8b38e8cfd40;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:08:01.267Z] : 
+[debug] [2022-09-24T07:08:01.269Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T07:08:01.270Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-24T07:08:01.271Z] : CLI Version:  1.13.3
+[debug] [2022-09-24T07:08:01.271Z] : Platform:     win32
+[debug] [2022-09-24T07:08:01.272Z] : Node Version: v16.15.1
+[debug] [2022-09-24T07:08:01.274Z] : Time:         Sat Sep 24 2022 12:38:01 GMT+0530 (India Standard Time)
+[debug] [2022-09-24T07:08:01.275Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T07:08:01.275Z] : 
+[debug] [2022-09-24T07:08:02.691Z] : > authorizing via signed-in user option
+[debug] [2022-09-24T07:08:02.692Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-24T07:08:02.713Z] : > refreshing access token <
+[debug] [2022-09-24T07:08:02.715Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-24T07:08:02.906Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:08:03 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=3bcf233c3836eb7934b6f3edc257f951; Path=/","iamcsr=be16cdaa-eaed-4101-91f5-d750ad63fda6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=be16cdaa-eaed-4101-91f5-d750ad63fda6;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:08:02.927Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-24T07:08:03.256Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:08:04 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=6049d851-02ca-4caf-bff8-0b08310a8824;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6049d851-02ca-4caf-bff8-0b08310a8824;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:08:03.260Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-24T07:08:03.373Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:08:04 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=4b322c48-6413-46f5-9b88-80ac7c1705bf;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4b322c48-6413-46f5-9b88-80ac7c1705bf;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:08:03.680Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-24T07:08:04.359Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:08:05 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=d702c09c-96bd-41fb-a4e3-59e35edd3ec5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d702c09c-96bd-41fb-a4e3-59e35edd3ec5;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:08:04.364Z] : unknown eol undefined hence skipping check
+[info] [2022-09-24T07:08:04.453Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-24T07:08:04.454Z] : 
+[info] [2022-09-24T07:08:04.456Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2022-09-24T07:08:07.417Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2022-09-24T07:08:15.499Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   3.73 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 321.92 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 220.50 kB | 
+[Angular-plugin]: main.js               | main          |  64.16 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  48.11 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   4.37 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-24T07:08:15.337Z - Hash: 7ea2108a74879a89 - Time: 5576ms
+[info] [2022-09-24T07:08:15.502Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on localhost:3030, open your browser on http://localhost:3030/app **
+[Angular-plugin]: 
+[info] [2022-09-24T07:08:15.504Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2022-09-24T07:08:15.521Z] : [Angular-plugin]: Please visit this url to access beyondschool: http://localhost:3000/app/
+[info] [2022-09-24T07:08:24.805Z] : Shutting down server
+[debug] [2022-09-24T07:08:24.814Z] : proxy closed
+[info] [2022-09-24T07:08:24.817Z] : 
+[info] [2022-09-24T07:08:24.818Z] : ✔ Shutdown complete
+[debug] [2022-09-24T07:08:24.819Z] : NO ERRORS REGISTERED
+[debug] [2022-09-24T07:08:24.820Z] : EXEC ENDED with event: serve, message: success
+[debug] [2022-09-24T07:08:24.820Z] : TOTAL DURATION OF COMMAND EXEC : 22162
+[debug] [2022-09-24T07:08:24.842Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-24T07:08:26.062Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:08:26 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=0b06833a-0010-4a9e-90e7-cd61c4868dd7;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=0b06833a-0010-4a9e-90e7-cd61c4868dd7;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:24:53.849Z] : 
+[debug] [2022-09-24T07:24:53.851Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T07:24:53.853Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-24T07:24:53.853Z] : CLI Version:  1.13.3
+[debug] [2022-09-24T07:24:53.854Z] : Platform:     win32
+[debug] [2022-09-24T07:24:53.855Z] : Node Version: v16.15.1
+[debug] [2022-09-24T07:24:53.861Z] : Time:         Sat Sep 24 2022 12:54:53 GMT+0530 (India Standard Time)
+[debug] [2022-09-24T07:24:53.862Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T07:24:53.862Z] : 
+[debug] [2022-09-24T07:24:55.935Z] : > authorizing via signed-in user option
+[debug] [2022-09-24T07:24:55.936Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-24T07:24:55.957Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-24T07:24:56.216Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:24:56 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=02990d04-65b4-4223-915e-ce156ef08b93;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=02990d04-65b4-4223-915e-ce156ef08b93;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:24:56.221Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-24T07:24:56.532Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:24:57 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=aeadba9d-74de-4af6-88dc-95b146622697;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=aeadba9d-74de-4af6-88dc-95b146622697;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:24:57.016Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-24T07:24:58.087Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:24:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=21d7ef71-97fd-4834-a174-1d1864d28593;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=21d7ef71-97fd-4834-a174-1d1864d28593;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:24:58.091Z] : unknown eol undefined hence skipping check
+[info] [2022-09-24T07:24:58.182Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-24T07:24:58.184Z] : 
+[info] [2022-09-24T07:24:58.187Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2022-09-24T07:25:02.721Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2022-09-24T07:25:12.510Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   3.73 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 321.92 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 220.50 kB | 
+[Angular-plugin]: main.js               | main          |  64.16 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  48.11 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   4.37 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-24T07:25:12.352Z - Hash: 7ea2108a74879a89 - Time: 6091ms
+[info] [2022-09-24T07:25:12.513Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on localhost:3030, open your browser on http://localhost:3030/app **
+[Angular-plugin]: 
+[info] [2022-09-24T07:25:12.517Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2022-09-24T07:25:12.533Z] : [Angular-plugin]: Please visit this url to access beyondschool: http://localhost:3000/app/
+[debug] [2022-09-24T07:25:19.883Z] : proxy closed
+[info] [2022-09-24T07:25:29.438Z] : Shutting down server
+[debug] [2022-09-24T07:25:29.450Z] : proxy closed
+[info] [2022-09-24T07:25:29.453Z] : 
+[info] [2022-09-24T07:25:29.455Z] : ✔ Shutdown complete
+[debug] [2022-09-24T07:25:29.456Z] : NO ERRORS REGISTERED
+[debug] [2022-09-24T07:25:29.458Z] : EXEC ENDED with event: serve, message: success
+[debug] [2022-09-24T07:25:29.458Z] : TOTAL DURATION OF COMMAND EXEC : 33553
+[debug] [2022-09-24T07:25:29.486Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-24T07:25:30.803Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:25:31 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=aa374c08-8c56-4183-9d6f-7246a2436a05;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=aa374c08-8c56-4183-9d6f-7246a2436a05;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:30:15.461Z] : 
+[debug] [2022-09-24T07:30:15.463Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T07:30:15.463Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-24T07:30:15.464Z] : CLI Version:  1.13.3
+[debug] [2022-09-24T07:30:15.464Z] : Platform:     win32
+[debug] [2022-09-24T07:30:15.465Z] : Node Version: v16.15.1
+[debug] [2022-09-24T07:30:15.467Z] : Time:         Sat Sep 24 2022 13:00:15 GMT+0530 (India Standard Time)
+[debug] [2022-09-24T07:30:15.467Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T07:30:15.468Z] : 
+[debug] [2022-09-24T07:30:16.870Z] : > authorizing via signed-in user option
+[debug] [2022-09-24T07:30:16.871Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-24T07:30:16.889Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-24T07:30:17.076Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:30:17 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=8f2ee791-a47f-4288-acab-981e56f396d2;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8f2ee791-a47f-4288-acab-981e56f396d2;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:30:17.081Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-24T07:30:17.246Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:30:17 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=a64d8abf-03cb-4eae-a42f-e28804833c10;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a64d8abf-03cb-4eae-a42f-e28804833c10;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:30:17.551Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-24T07:30:18.146Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:30:18 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=fa13009c-51c4-4489-889e-ceb7f102ad6d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fa13009c-51c4-4489-889e-ceb7f102ad6d;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T07:30:18.151Z] : unknown eol undefined hence skipping check
+[info] [2022-09-24T07:30:18.258Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-24T07:30:18.259Z] : 
+[info] [2022-09-24T07:30:18.262Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2022-09-24T07:30:21.174Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2022-09-24T07:30:28.724Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   3.73 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 321.92 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 220.50 kB | 
+[Angular-plugin]: main.js               | main          |  64.16 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  48.11 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   4.37 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-24T07:30:28.584Z - Hash: 7ea2108a74879a89 - Time: 5112ms
+[info] [2022-09-24T07:30:28.726Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on localhost:3030, open your browser on http://localhost:3030/app **
+[Angular-plugin]: 
+[info] [2022-09-24T07:30:28.728Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2022-09-24T07:30:28.754Z] : [Angular-plugin]: Please visit this url to access beyondschool: http://localhost:3000/app/
+[debug] [2022-09-24T07:30:37.329Z] : proxy closed
+[debug] [2022-09-24T07:30:39.654Z] : proxy closed
+[info] [2022-09-24T07:30:51.878Z] : Shutting down server
+[info] [2022-09-24T07:30:51.885Z] : 
+[info] [2022-09-24T07:30:51.887Z] : ✔ Shutdown complete
+[debug] [2022-09-24T07:30:51.888Z] : NO ERRORS REGISTERED
+[debug] [2022-09-24T07:30:51.889Z] : EXEC ENDED with event: serve, message: success
+[debug] [2022-09-24T07:30:51.889Z] : TOTAL DURATION OF COMMAND EXEC : 35045
+[debug] [2022-09-24T07:30:51.906Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-24T07:30:53.207Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 07:30:53 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=c915d5cf-89d5-47fb-b356-6aeab4f1b331;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c915d5cf-89d5-47fb-b356-6aeab4f1b331;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T08:11:59.150Z] : 
+[debug] [2022-09-24T08:11:59.152Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T08:11:59.153Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-24T08:11:59.153Z] : CLI Version:  1.13.3
+[debug] [2022-09-24T08:11:59.153Z] : Platform:     win32
+[debug] [2022-09-24T08:11:59.154Z] : Node Version: v16.15.1
+[debug] [2022-09-24T08:11:59.164Z] : Time:         Sat Sep 24 2022 13:41:59 GMT+0530 (India Standard Time)
+[debug] [2022-09-24T08:11:59.165Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T08:11:59.165Z] : 
+[debug] [2022-09-24T08:12:00.679Z] : > authorizing via signed-in user option
+[debug] [2022-09-24T08:12:00.679Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-24T08:12:00.696Z] : > refreshing access token <
+[debug] [2022-09-24T08:12:00.698Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-24T08:12:00.905Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:12:01 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=94da0c17b67b4320ada519c299270f95; Path=/","iamcsr=5ab35140-c833-4b90-80da-38642980ae54;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5ab35140-c833-4b90-80da-38642980ae54;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T08:12:00.916Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-24T08:12:01.178Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:12:01 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=b26f0f1f-9477-467e-b77f-20f5ee169a07;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b26f0f1f-9477-467e-b77f-20f5ee169a07;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T08:12:01.180Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-24T08:12:01.308Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:12:01 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=56651c71-9237-478a-833a-60d20f0e66eb;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=56651c71-9237-478a-833a-60d20f0e66eb;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T08:12:01.644Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-24T08:12:02.411Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:12:03 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=38b960b4-ce04-4dbd-9fe7-42c2afb2ef86;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=38b960b4-ce04-4dbd-9fe7-42c2afb2ef86;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T08:12:02.414Z] : unknown eol undefined hence skipping check
+[info] [2022-09-24T08:12:02.493Z] : ℹ server[beyondschool]: URL : http://localhost:3000/server/beyondschool/
+[info] [2022-09-24T08:12:02.494Z] : 
+[info] [2022-09-24T08:12:02.496Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2022-09-24T08:12:06.404Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2022-09-24T08:12:16.501Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   3.73 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 321.92 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 220.50 kB | 
+[Angular-plugin]: main.js               | main          |  64.16 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  48.11 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   4.37 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-24T08:12:16.375Z - Hash: eb81710382078f42 - Time: 6989ms
+[info] [2022-09-24T08:12:16.503Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on localhost:3030, open your browser on http://localhost:3030/app **
+[Angular-plugin]: 
+[info] [2022-09-24T08:12:16.508Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2022-09-24T08:12:16.530Z] : [Angular-plugin]: Please visit this url to access beyondschool: http://localhost:3000/app/
+[info] [2022-09-24T08:12:33.158Z] : Shutting down server
+[debug] [2022-09-24T08:12:33.168Z] : proxy closed
+[info] [2022-09-24T08:12:33.175Z] : 
+[info] [2022-09-24T08:12:33.177Z] : ✔ Shutdown complete
+[debug] [2022-09-24T08:12:33.179Z] : NO ERRORS REGISTERED
+[debug] [2022-09-24T08:12:33.180Z] : EXEC ENDED with event: serve, message: success
+[debug] [2022-09-24T08:12:33.180Z] : TOTAL DURATION OF COMMAND EXEC : 32523
+[debug] [2022-09-24T08:12:33.201Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-24T08:12:34.605Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:12:35 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=14d1196f-08f8-40be-b1bb-ba47f181acf0;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=14d1196f-08f8-40be-b1bb-ba47f181acf0;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T08:33:51.047Z] : 
+[debug] [2022-09-24T08:33:51.051Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T08:33:51.051Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-24T08:33:51.052Z] : CLI Version:  1.13.3
+[debug] [2022-09-24T08:33:51.052Z] : Platform:     win32
+[debug] [2022-09-24T08:33:51.053Z] : Node Version: v16.15.1
+[debug] [2022-09-24T08:33:51.054Z] : Time:         Sat Sep 24 2022 14:03:51 GMT+0530 (India Standard Time)
+[debug] [2022-09-24T08:33:51.055Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T08:33:51.055Z] : 
+[debug] [2022-09-24T08:33:51.968Z] : > authorizing via signed-in user option
+[debug] [2022-09-24T08:33:51.968Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-24T08:33:51.981Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-24T08:33:52.390Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:33:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=1d608488-8fb1-4efd-921b-8c4c62cf002e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1d608488-8fb1-4efd-921b-8c4c62cf002e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T08:33:52.394Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-24T08:33:52.700Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:33:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=cf012212-2f57-48bb-927a-8d73078d8f86;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=cf012212-2f57-48bb-927a-8d73078d8f86;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T08:33:52.940Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-24T08:33:53.574Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:33:54 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=3de2eb70-68a2-4825-be65-a229d4d596d1;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3de2eb70-68a2-4825-be65-a229d4d596d1;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[warn] [2022-09-24T08:33:53.582Z] : ⚠ skipping serve of function [beyondschool] since there is no valid catalyst-config.json file present
+[warn] [2022-09-24T08:33:53.583Z] : ⚠ functions: No targets are ready to be served in local
+[info] [2022-09-24T08:33:53.584Z] : ℹ client[beyondschool]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2022-09-24T08:33:56.713Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2022-09-24T08:34:04.171Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   3.73 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 321.92 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 220.50 kB | 
+[Angular-plugin]: main.js               | main          |  64.16 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  48.11 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   4.37 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-24T08:34:04.001Z - Hash: eb81710382078f42 - Time: 5345ms
+[info] [2022-09-24T08:34:04.174Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on localhost:3030, open your browser on http://localhost:3030/app **
+[Angular-plugin]: 
+[info] [2022-09-24T08:34:04.178Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2022-09-24T08:34:04.199Z] : [Angular-plugin]: Please visit this url to access beyondschool: http://localhost:3000/app/
+[debug] [2022-09-24T08:34:08.671Z] : proxy closed
+[debug] [2022-09-24T08:34:11.979Z] : proxy closed
+[info] [2022-09-24T08:34:20.941Z] : Shutting down server
+[debug] [2022-09-24T08:34:20.945Z] : proxy closed
+[info] [2022-09-24T08:34:20.947Z] : 
+[info] [2022-09-24T08:34:20.950Z] : ✔ Shutdown complete
+[debug] [2022-09-24T08:34:20.952Z] : NO ERRORS REGISTERED
+[debug] [2022-09-24T08:34:20.953Z] : EXEC ENDED with event: serve, message: success
+[debug] [2022-09-24T08:34:20.953Z] : TOTAL DURATION OF COMMAND EXEC : 29001
+[debug] [2022-09-24T08:34:20.972Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-24T08:34:23.547Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:34:23 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=327f4538-2e74-4f45-839e-876b62d4c811;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=327f4538-2e74-4f45-839e-876b62d4c811;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T08:34:56.186Z] : 
+[debug] [2022-09-24T08:34:56.188Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T08:34:56.189Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Santhosh\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2022-09-24T08:34:56.189Z] : CLI Version:  1.13.3
+[debug] [2022-09-24T08:34:56.190Z] : Platform:     win32
+[debug] [2022-09-24T08:34:56.190Z] : Node Version: v16.15.1
+[debug] [2022-09-24T08:34:56.192Z] : Time:         Sat Sep 24 2022 14:04:56 GMT+0530 (India Standard Time)
+[debug] [2022-09-24T08:34:56.193Z] : ----------------------------------------------------------------------
+[debug] [2022-09-24T08:34:56.193Z] : 
+[debug] [2022-09-24T08:34:57.567Z] : > authorizing via signed-in user option
+[debug] [2022-09-24T08:34:57.568Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-24T08:34:57.586Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285 
+
+[debug] [2022-09-24T08:34:57.852Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:34:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=0c11dc1f-c30c-4ef1-a986-3bbcba0e9059;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=0c11dc1f-c30c-4ef1-a986-3bbcba0e9059;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T08:34:57.858Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/environment 
+
+[debug] [2022-09-24T08:34:58.100Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:34:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=82bb0a1f-705b-44a8-802f-1c736a3bd901;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=82bb0a1f-705b-44a8-802f-1c736a3bd901;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-24T08:34:58.129Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-24T08:34:58.338Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:34:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=3fce29a8-f8b5-4541-af08-210d4db634c0;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3fce29a8-f8b5-4541-af08-210d4db634c0;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[warn] [2022-09-24T08:34:58.353Z] : ⚠ skipping deploy of target [beyondschool] since there is no valid catalyst-config.json file present
+[info] [2022-09-24T08:34:58.899Z] : ℹ Plugin : "zcatalyst-cli-plugin-angular" is used for client deploy
+[info] [2022-09-24T08:34:58.900Z] : ℹ Building Application...
+[info] [2022-09-24T08:35:01.807Z] : [Angular-plugin]: Option "deployUrl" is deprecated: Use "baseHref" option, "APP_BASE_HREF" DI token or a combination of both instead. For more information, see https://angular.io/guide/deployment#the-deploy-url.
+[info] [2022-09-24T08:35:24.960Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files           | Names         |  Raw Size | Estimated Transfer Size
+[Angular-plugin]: main.72e824000a04c993.js      | main          | 451.77 kB |               107.59 kB
+[Angular-plugin]: polyfills.f9b771efa7183cc7.js | polyfills     |  33.13 kB |                10.63 kB
+[Angular-plugin]: runtime.647b3e7b99d7182c.js   | runtime       |   1.05 kB |               598 bytes
+[Angular-plugin]: styles.ef46db3751d8e999.css   | styles        |   0 bytes |                       -
+[Angular-plugin]: 
+[Angular-plugin]:                               | Initial Total | 485.96 kB |               118.80 kB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2022-09-24T08:35:24.955Z - Hash: aad0e196aa07216c - Time: 21230ms
+[debug] [2022-09-24T08:35:25.191Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/2207000000006285/webapp 
+
+[debug] [2022-09-24T08:35:26.472Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:35:27 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=b11cef76-9f9b-47dc-a42d-c8478c15c86a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b11cef76-9f9b-47dc-a42d-c8478c15c86a;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2022-09-24T08:35:26.475Z] : 
+[error] [2022-09-24T08:35:26.477Z] : ✖ functions: deploy skipped
+[info] [2022-09-24T08:35:26.477Z] : 
+[info] [2022-09-24T08:35:26.479Z] : ✔ client: deploy successful
+[info] [2022-09-24T08:35:26.480Z] : ℹ client: URL => https://beyondschool-60016782335.development.catalystserverless.in/app/index.html
+[info] [2022-09-24T08:35:26.481Z] : 
+[info] [2022-09-24T08:35:26.482Z] : ✔ Catalyst deploy complete!
+[debug] [2022-09-24T08:35:26.483Z] : NO ERRORS REGISTERED
+[debug] [2022-09-24T08:35:26.484Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2022-09-24T08:35:26.484Z] : TOTAL DURATION OF COMMAND EXEC : 28941
+[debug] [2022-09-24T08:35:26.501Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-09-24T08:35:27.950Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 24 Sep 2022 08:35:28 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=33b24b09-4b7a-4798-ab7d-259d674b5c8b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=33b24b09-4b7a-4798-ab7d-259d674b5c8b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
