@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb69a10680d66eb52a401386f49c3ba814566ce0bad522059cc8e7452e83cd52
-size 202
+{
+  "functions": {
+    "targets": [
+      "beyondschool_function"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client",
+    "plugin": "zcatalyst-cli-plugin-angular"
+  }
+}
